@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:platzi_trips_app/description_place.dart';
 import 'package:platzi_trips_app/header_appbar.dart';
+import 'package:platzi_trips_app/main_navigation.dart';
 import 'package:platzi_trips_app/mealReminder/meal_header.dart';
 import 'package:platzi_trips_app/mealReminder/meal_reminder_card.dart';
 import 'package:platzi_trips_app/mealReminder/meal_reminder_card_list.dart';
@@ -16,45 +17,20 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // Try running your application with "flutter run". You'll see the
-        // application has a blue toolbar. Then, without quitting the app, try
-        // changing the primarySwatch below to Colors.green and then invoke
-        // "hot reload" (press "r" in the console where you ran "flutter run",
-        // or simply save your changes to "hot reload" in a Flutter IDE).
-        // Notice that the counter didn't reset back to zero; the application
-        // is not restarted.
-        primarySwatch: Colors.blue,
-      ),
-      home: Scaffold(
-        //     body: Stack(
-        //   children: <Widget>[
-        //     ListView(
-        //       children: <Widget>[MealReminderCardList()],
-        //     ),
-        //     MealHeader(),
-        //   ],
-        // )
-        body: Stack(
-          children: <Widget>[
-            ListView(
-              children: <Widget>[
-                DescriptionPlace("Duwili Ella", 5,
-                    "Velit veniam aliqua labore duis mollit eiusmod eu occaecat est consectetur ea laborum ut ipsum. Occaecat veniam fugiat nulla quis do veniam ipsum nulla adipisicing voluptate veniam voluptate deserunt deserunt. Officia sit tempor ut adipisicing. Deserunt sunt ex reprehenderit magna esse labore enim laborum magna est excepteur.\n Ut amet proident consequat dolore amet adipisicing amet tempor. Cillum fugiat commodo consequat dolore. Fugiat consequat in proident quis laborum esse nostrud veniam quis reprehenderit mollit. Non eiusmod amet proident pariatur anim quis."),
-                ReviewList()
-              ],
-            ),
-            HeaderAppBar(),
-          ],
+        title: 'Flutter Demo',
+        theme: ThemeData(
+          // This is the theme of your application.
+          //
+          // Try running your application with "flutter run". You'll see the
+          // application has a blue toolbar. Then, without quitting the app, try
+          // changing the primarySwatch below to Colors.green and then invoke
+          // "hot reload" (press "r" in the console where you ran "flutter run",
+          // or simply save your changes to "hot reload" in a Flutter IDE).
+          // Notice that the counter didn't reset back to zero; the application
+          // is not restarted.
+          primarySwatch: Colors.blue,
         ),
-        // body: new ReviewList(),
-        // body: new DescriptionPlace("Duwili Ella", 5,
-        //     "Velit veniam aliqua labore duis mollit eiusmod eu occaecat est consectetur ea laborum ut ipsum. Occaecat veniam fugiat nulla quis do veniam ipsum nulla adipisicing voluptate veniam voluptate deserunt deserunt. Officia sit tempor ut adipisicing. Deserunt sunt ex reprehenderit magna esse labore enim laborum magna est excepteur.\n Ut amet proident consequat dolore amet adipisicing amet tempor. Cillum fugiat commodo consequat dolore. Fugiat consequat in proident quis laborum esse nostrud veniam quis reprehenderit mollit. Non eiusmod amet proident pariatur anim quis."),
-      ),
-    );
+        home: MainNavigation());
   }
 }
 
