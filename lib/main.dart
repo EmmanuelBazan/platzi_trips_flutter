@@ -7,6 +7,7 @@ import 'package:platzi_trips_app/mealReminder/meal_reminder_card.dart';
 import 'package:platzi_trips_app/mealReminder/meal_reminder_card_list.dart';
 import 'package:platzi_trips_app/review_list.dart';
 import 'package:platzi_trips_app/gradient_back.dart';
+import 'package:platzi_trips_app/tab_bar_cupertino.dart';
 
 void main() {
   runApp(MyApp());
@@ -30,7 +31,8 @@ class MyApp extends StatelessWidget {
           // is not restarted.
           primarySwatch: Colors.blue,
         ),
-        home: MainNavigation());
+        // home: MainNavigation());
+        home: TabBarCupertino());
   }
 }
 
