@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:platzi_trips_app/screens/account_screen.dart';
-import 'package:platzi_trips_app/screens/home_screen.dart';
-import 'package:platzi_trips_app/screens/search_screen.dart';
+import 'package:platzi_trips_app/src/mealReminder/ui/screens/reminder_screen.dart';
+import 'package:platzi_trips_app/src/user/ui/screens/account_screen.dart';
+import 'package:platzi_trips_app/src/place/ui/screens/home_screen.dart';
+import 'package:platzi_trips_app/src/search/ui/screens/search_screen.dart';
 
 class TabBarCupertino extends StatelessWidget {
   @override
@@ -18,6 +19,11 @@ class TabBarCupertino extends StatelessWidget {
                   color: Colors.indigo,
                 ),
                 title: Text("")),
+            BottomNavigationBarItem(
+                icon: Icon(
+              Icons.alarm,
+              color: Colors.indigo,
+            )),
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.search,
@@ -41,10 +47,15 @@ class TabBarCupertino extends StatelessWidget {
               break;
             case 1:
               return CupertinoTabView(
-                builder: (BuildContext context) => SearchScreen(),
+                builder: (BuildContext context) => ReminderScreen(),
               );
               break;
             case 2:
+              return CupertinoTabView(
+                builder: (BuildContext context) => SearchScreen(),
+              );
+              break;
+            case 3:
               return CupertinoTabView(
                 builder: (BuildContext context) => AccountScreen(),
               );

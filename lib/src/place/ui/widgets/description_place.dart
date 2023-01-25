@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:platzi_trips_app/main_button.dart';
+import 'package:platzi_trips_app/src/global_widgets/main_button.dart';
 
 class DescriptionPlace extends StatelessWidget {
   String namePlace;
@@ -40,7 +40,7 @@ class DescriptionPlace extends StatelessWidget {
       textDirection: TextDirection.ltr,
       children: <Widget>[
         Container(
-          margin: EdgeInsets.only(top: 320.0, left: 20.0, right: 20.0),
+          margin: EdgeInsets.only(top: 360.0, left: 20.0, right: 20.0),
           child: Text(
             namePlace,
             style: TextStyle(

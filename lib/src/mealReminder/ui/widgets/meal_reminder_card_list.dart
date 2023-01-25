@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:platzi_trips_app/mealReminder/meal_reminder_card.dart';
+import 'package:platzi_trips_app/src/mealReminder/ui/widgets/meal_reminder_card.dart';
 
 class MealReminderCardList extends StatelessWidget {
   @override

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:platzi_trips_app/screens/account_screen.dart';
-import 'package:platzi_trips_app/screens/home_screen.dart';
-import 'package:platzi_trips_app/screens/search_screen.dart';
+import 'package:platzi_trips_app/src/mealReminder/ui/screens/reminder_screen.dart';
+import 'package:platzi_trips_app/src/user/ui/screens/account_screen.dart';
+import 'package:platzi_trips_app/src/place/ui/screens/home_screen.dart';
+import 'package:platzi_trips_app/src/search/ui/screens/search_screen.dart';
 
 class MainNavigation extends StatefulWidget {
   @override
@@ -16,6 +17,7 @@ class _MainNavigation extends State<MainNavigation> {
 
   final List<Widget> widgetsChildren = [
     HomeScreen(),
+    ReminderScreen(),
     SearchScreen(),
     AccountScreen()
   ];

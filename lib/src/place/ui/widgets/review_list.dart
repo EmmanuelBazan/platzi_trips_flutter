@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:platzi_trips_app/review.dart';
+import 'package:platzi_trips_app/src/place/ui/widgets/review.dart';
 
 class ReviewList extends StatelessWidget {
   @override

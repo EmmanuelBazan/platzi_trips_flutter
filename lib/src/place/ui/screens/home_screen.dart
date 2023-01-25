@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../description_place.dart';
-import '../header_appbar.dart';
-import '../review_list.dart';
+import '../widgets/description_place.dart';
+import '../widgets/header_appbar.dart';
+import '../widgets/review_list.dart';
 
 class HomeScreen extends StatelessWidget {
   @override

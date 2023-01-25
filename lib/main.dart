@@ -1,13 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:platzi_trips_app/description_place.dart';
-import 'package:platzi_trips_app/header_appbar.dart';
-import 'package:platzi_trips_app/main_navigation.dart';
-import 'package:platzi_trips_app/mealReminder/meal_header.dart';
-import 'package:platzi_trips_app/mealReminder/meal_reminder_card.dart';
-import 'package:platzi_trips_app/mealReminder/meal_reminder_card_list.dart';
-import 'package:platzi_trips_app/review_list.dart';
-import 'package:platzi_trips_app/gradient_back.dart';
-import 'package:platzi_trips_app/tab_bar_cupertino.dart';
+import 'package:platzi_trips_app/src/place/ui/widgets/description_place.dart';
+import 'package:platzi_trips_app/src/place/ui/widgets/header_appbar.dart';
+import 'package:platzi_trips_app/src/main_navigation.dart';
+import 'package:platzi_trips_app/src/place/ui/widgets/review_list.dart';
+import 'package:platzi_trips_app/src/global_widgets/gradient_back.dart';
+import 'package:platzi_trips_app/src/tab_bar_cupertino.dart';
 
 void main() {
   runApp(MyApp());
